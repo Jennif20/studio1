@@ -1,8 +1,19 @@
 // Write your JS here
-import test from './script2.js';
+import {test }from './script2.js';
+import {get_database_snapshot, initialize_firebase} from './fireBase.js';
+import {displayImage} from './imgList.js';
 
-console.log('test');
+function initializeAndGrabData() {
+    initialize_firebase();
+    get_database_snapshot();
+}
 
-test();
+initializeAndGrabData();
+
+function final_display(){
+
+}
+
+
 
 
